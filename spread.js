@@ -17,7 +17,7 @@ let product = {
   imageUrl: 'https://i.ebayimg.com/images/g/9T4AAOSwbmdZf2jN/s-l640.jpg'
 }
 
-const productCopy = [...product];
+const productCopy = {...product};
 
 
 
@@ -44,8 +44,9 @@ function addNums(num1, num2, num3) {
   return num1 + num2 + num3;
 }
 
-const result = [...numbers];
-addNums(result);
+
+const result = addNums(...numbers);
+
 
 
 ////////// PROBLEM 4 //////////

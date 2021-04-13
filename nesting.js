@@ -51,15 +51,7 @@ var employees = [
 */
 
 function employeeUpdater(){
-  for (let prop in employees){
-    if (employees[prop] === 'Theo'){
-      delete employees[prop];
-    }
-    if (employees[prop] === 'Lorie'){
-      employees[department] = 'HR';
-    }
-  }
-  return employees;
+  
 }
 
 
@@ -79,7 +71,13 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 function removeDuplicates(workplaceAccidents){
-
+  const noDuplicates = [];
+  for ( let i = 0; i < workplaceAccidents.length; i++){
+    if (noDuplicates.indexOf(workplaceAccidents[i]) === -1){
+      noDuplicates.push(workplaceAccidents[i]);
+    }
+  }
+  return noDuplicates;
 }
 
 
@@ -151,11 +149,7 @@ var myCar = {
 */
 
 function recordCleaner(){
-  for (let prop in myCar){
-    if (myCar[prop] === true){
-      return false;
-    }
-  }
+  
 }
 
 
@@ -176,7 +170,11 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 */
 
 function looper(numsArr){
-  
+  const nums = [];
+  for (let i = 0; i < numsArr.length; i++){
+    nums.indexOf(numsArr[i]) % 2 === 0 ? nums.push('even') : nums.push('odd');
+  }
+  return nums;
 }
 
 
