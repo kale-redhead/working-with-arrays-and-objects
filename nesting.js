@@ -50,7 +50,17 @@ var employees = [
     3. Return the updated employee array.
 */
 
-//Code Here
+function employeeUpdater(){
+  for (let prop in employees){
+    if (employees[prop] === 'Theo'){
+      delete employees[prop];
+    }
+    if (employees[prop] === 'Lorie'){
+      employees[department] = 'HR';
+    }
+  }
+  return employees;
+}
 
 
 
@@ -68,7 +78,9 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
     3. Return the updated array.
 */
 
-//Code Here
+function removeDuplicates(workplaceAccidents){
+
+}
 
 
 
@@ -138,7 +150,13 @@ var myCar = {
     3. Change atFaultForAccident from true to false.
 */
 
-//Code Here
+function recordCleaner(){
+  for (let prop in myCar){
+    if (myCar[prop] === true){
+      return false;
+    }
+  }
+}
 
 
 
@@ -157,6 +175,8 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
     4. Return the modified numsArr.
 */
 
-//Code Here
+function looper(numsArr){
+  
+}
 
 

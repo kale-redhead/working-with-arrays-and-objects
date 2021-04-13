@@ -40,7 +40,9 @@
 */
 
 function showValues( obj ) {
-  //Code Here
+  for (let obj in showValues){
+
+  }
 }
 
 
@@ -53,7 +55,11 @@ function showValues( obj ) {
   Return the updated object.
 */
 
-//Code Here
+function greaterThan10 (obj){
+  for (let obj in greaterThan10){
+
+  }
+}
 
 
 
@@ -65,7 +71,11 @@ function showValues( obj ) {
   Return the updated object.
 */
 
-//Code Here
+function double(obj){
+  for(let obj in double){
+    
+  }
+}
 
 
 
