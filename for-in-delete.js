@@ -41,7 +41,7 @@
 
 function showValues( obj ) {
   for (let key in obj){
-
+    return obj[key];
   }
 }
 
@@ -57,8 +57,11 @@ function showValues( obj ) {
 
 function greaterThan10 (obj){
   for (let key in obj){
-
+    if (key > 10){
+      obj[key] = 0;
+    }
   }
+  return obj[key];
 }
 
 
